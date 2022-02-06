@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Poppins:wght@200&display=swap");
+html {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --shadow_1: 0px 0px 10px #ffffff94;
+  --shadow_2: 0px 0px 10px #c7c7c794;
+  --shadow_3: 0px 0px 10px #75757594;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h2,
+h3 {
+  margin: 0;
+}
+input:focus {
+  border-radius: 5px;
+  outline: 1px solid #c9c3c3;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.my_container {
+  width: 1120px;
+  margin: auto;
+  padding: 30px 0px;
+}
+.full_container {
+  background-color: #f9fafb;
+}
+.my_row {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+}
+.my_col_6 {
+  flex: 0 0 auto;
+  width: 50%;
+  padding: 0px 15px;
+}
+/* Loan tabs CSS section */
+.tabs_top_hader {
+  padding: 20px 10px;
+}
+.tabs_header_content {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+.tabs_item {
+  text-align: center;
+  color: #111111;
+  padding: 0px 0px 25px 0px;
+}
+.tabs_item.active {
+  border-bottom: 1px solid #e83b3e;
+}
+.tabs_item:hover .tabs_icon {
+  color: #e83b3e;
+}
+.tabs_icon {
+  font-size: 40px;
+  padding: 10px;
+  background: #fff;
+  color: #5e5c5c;
+  width: 80px;
+  line-height: 63px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+}
+.tabs_title {
+  font-size: 14px;
+}
+.tabs_content_right_title {
+  font-size: 22px;
+}
+.business_tipe_list {
+  padding: 0 0 0 25px;
+}
+.business_tipe_list ul li {
+  position: relative;
+  font-size: 16px;
+}
+.business_tipe_list ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #e83b3e;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 8px;
+}
+.hasan_tabs_content {
+  display: none;
+}
+.hasan_tabs_content.active {
+  display: block;
+}
+
+/* Tabs CSS start */
+.hasan_tabs {
+  width: 40%;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 37px;
+}
+.hasan_tabs_header {
+  background: linear-gradient(19deg, #9c47adab, #22d55987, #3194ab);
+}
+.hasan_tabs .hasan_tabs_header ul {
+  display: flex;
+  justify-content: space-around;
+}
+.hasan_tabs .hasan_tabs_header ul li {
+  width: 20%;
+  text-align: center;
+  list-style: none;
+}
+.hasan_tabs .hasan_tabs_header ul li a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  display: block;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: var(--shadow_3);
+}
+.hasan_tabs .hasan_tabs_header ul li a:hover {
+  color: bisque;
+}
+.hasan_tabs .hasan_tabs_header ul li a.active {
+  border: 1px solid white;
+  border-bottom: 0;
+  color: bisque;
+  border-top: 0;
+  background: linear-gradient(7deg, #2be3d0c2, #3194ab);
+}
+.hasan_tab_content {
+  display: none;
+  padding: 20px 10px;
+}
+.content_header {
+  color: antiquewhite;
+}
+p {
+  color: mediumblue;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hasan_tab_content.active {
+  display: block;
+  background: linear-gradient(19deg, #9c47adab, #22d55987, #3194ab);
+}
