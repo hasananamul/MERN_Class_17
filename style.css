@@ -22,6 +22,9 @@ a:hover {
 li {
   list-style: none;
 }
+h2 {
+  font-size: 1.4rem !important;
+}
 h2,
 h3 {
   margin: 0;
@@ -84,7 +87,7 @@ img {
   border-radius: 50%;
 }
 .tabs_title {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .tabs_content_right_title {
   font-size: 22px;
@@ -162,10 +165,32 @@ img {
 }
 p {
   color: mediumblue;
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: 600;
 }
 .hasan_tab_content.active {
   display: block;
   background: linear-gradient(19deg, #9c47adab, #22d55987, #3194ab);
+}
+
+/* Student result table CSS */
+.form-group {
+  display: inline-block;
+  width: 49%;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  margin-bottom: 5px;
+}
+.modal_content {
+  background: #fff;
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
 }
